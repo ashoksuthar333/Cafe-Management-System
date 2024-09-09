@@ -12,10 +12,10 @@ menu = {
     "cold drink": 70,
     "burger": 100,
 }
-
-total_order = 0  # Initialize total_order outside the loop
-
 while True:
+ total_order = 0  # Initialize total_order outside the loop
+
+ while True:
     print("coffee: Rs100\npizza: Rs150\ncold coffee: Rs80\nsandwich: Rs50\ntea: Rs20\ndabeli: Rs70\nmomos: Rs70\nsalad: Rs50\ncold drink: Rs70\nburger: Rs100")
     dish_1 = input("Enter the dish you want to order = ").strip().lower()
     
@@ -40,12 +40,11 @@ while True:
     else:
         print("Invalid input. Please respond with 'Yes' or 'No'.")
 
-print(f"The total amount of your order is Rs{total_order}")
-print("Thank you for visiting Ashok Restaurant. Have a great day!")
-restart = input("\nDo you want to start a new order? (Yes/No): ").strip().lower()
-if restart == "no":
+ print(f"The total amount of your order is Rs{total_order}")
+ print("Thank you for visiting Ashok Restaurant. Have a great day!")
+ restart = input("\nDo you want to start a new order? (Yes/No): ").strip().lower()
+ if restart == "no":
     print("Thank you for visiting Ashok Restaurant. Have a great day!")
     break  # This break statement correctly exits the outer loop
-elif restart != "yes":
+ elif restart != "yes":
     print("Invalid input. Please respond with 'Yes' or 'No'.")
-
