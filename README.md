@@ -1,44 +1,27 @@
-print('Welcome to Ashok Restaurant')
+Cafe Management System
+Introduction
+Welcome to the Cafe Management System project! This Python-based application is designed to streamline the ordering process for a restaurant or cafe, providing a simple yet effective solution for managing customer orders and calculating bills. This project showcases my ability to develop functional software applications and my understanding of core programming concepts.
 
-menu = {
-    "coffee": 100,
-    "pizza": 150,
-    "cold coffee": 80,
-    "sandwich": 50,
-    "tea": 20,
-    "dabeli": 70,
-    "momos": 70,
-    "salad": 50,
-    "cold drink": 70,
-    "burger": 100,
-}
+Key Features
+Dynamic Menu Management: The system allows for the easy addition of various dishes and drinks with associated prices, enabling flexibility in menu offerings.
+Order Handling: Users can place multiple orders in a single session. The system calculates the total amount dynamically as new items are added.
+User Interaction: An intuitive command-line interface guides users through placing orders and managing their selections, ensuring a seamless ordering experience.
+Error Handling: The system includes basic error handling to manage unrecognized dish names and invalid user inputs, ensuring robustness and reliability.
+Project Highlights
+Interactive User Interface: Designed with user experience in mind, the system provides clear prompts and feedback, making it easy for users to interact with.
+Efficient Order Processing: Orders are processed in real-time, and the total bill is updated immediately, reflecting the current status of the order.
+Extensible Codebase: The code is structured to be easily extendable, allowing for additional features and enhancements, such as integrating with a graphical user interface or a database for persistent storage.
+Technology Used
+Programming Language: Python
+Tools: Command-line interface
+How It Works
+The system presents a menu to the user, processes their order, and calculates the total cost of the order. It continues to prompt the user for additional orders until they choose to stop. The final bill is then displayed, summarizing the total amount due.
 
-total_order = 0  # Initialize total_order outside the loop
+Getting Started
+To get started with this project, simply clone the repository and run the provided Python script. You can then interact with the system via the command line to place orders and view the results.
 
-while True:
-    print("coffee: Rs100\npizza: Rs150\ncold coffee: Rs80\nsandwich: Rs50\ntea: Rs20\ndabeli: Rs70\nmomos: Rs70\nsalad: Rs50\ncold drink: Rs70\nburger: Rs100")
-    dish_1 = input("Enter the dish you want to order = ").strip().lower()
-    
-    if dish_1 in menu:
-        total_order += menu[dish_1]
-        print(f"Your dish {dish_1} has been added to your order")
-    else:
-        print(f"Ordered dish {dish_1} is not available at this moment")
-    
-    another_order = input("Do you want to add another dish? (Yes/No): ").strip().lower()
-    
-    if another_order == "yes":
-        dish_2 = input(f"Enter the next dish you want to order = ").strip().lower()
-        
-        if dish_2 in menu:
-            total_order += menu[dish_2]
-            print(f"Your ordered dish {dish_2} has been added to your order")
-        else:
-            print(f"Ordered dish {dish_2} is not available at this moment")
-    elif another_order == "no":
-        break
-    else:
-        print("Invalid input. Please respond with 'Yes' or 'No'.")
+This introduction provides a clear overview of your project, highlights its key features, and demonstrates your skills in software development. It also sets the stage for potential employers or collaborators to understand the practical applications and capabilities of your project.
 
-print(f"The total amount of your order is Rs{total_order}")
-print("Thank you for visiting Ashok Restaurant. Have a great day!")
+
+
+
