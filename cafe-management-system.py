@@ -42,3 +42,10 @@ while True:
 
 print(f"The total amount of your order is Rs{total_order}")
 print("Thank you for visiting Ashok Restaurant. Have a great day!")
+restart = input("\nDo you want to start a new order? (Yes/No): ").strip().lower()
+if restart == "no":
+    print("Thank you for visiting Ashok Restaurant. Have a great day!")
+    break  # This break statement correctly exits the outer loop
+elif restart != "yes":
+    print("Invalid input. Please respond with 'Yes' or 'No'.")
+
