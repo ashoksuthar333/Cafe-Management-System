@@ -1,4 +1,4 @@
-Cafe Management System
+#Cafe Management System
 Introduction
 Welcome to the Cafe Management System project! This Python-based application is designed to streamline the ordering process for a restaurant or cafe, providing a simple yet effective solution for managing customer orders and calculating bills. This project showcases my ability to develop functional software applications and my understanding of core programming concepts.
 
