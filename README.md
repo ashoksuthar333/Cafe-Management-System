@@ -17,11 +17,6 @@ Tools: Command-line interface
 How It Works
 The system presents a menu to the user, processes their order, and calculates the total cost of the order. It continues to prompt the user for additional orders until they choose to stop. The final bill is then displayed, summarizing the total amount due.
 
-Getting Started
-To get started with this project, simply clone the repository and run the provided Python script. You can then interact with the system via the command line to place orders and view the results.
-
-This introduction provides a clear overview of your project, highlights its key features, and demonstrates your skills in software development. It also sets the stage for potential employers or collaborators to understand the practical applications and capabilities of your project.
-
 
 
 
